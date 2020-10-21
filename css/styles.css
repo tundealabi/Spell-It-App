@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+*::after,*::before {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #4D595E;
+}
+.body-welcome {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-area {
+    padding: 1rem;
+    background-color: wheat;
+    width: 97%;
+}
+.welcome-area p,.welcome-area h3 {
+    font-size: 1.5rem;
+    line-height: 2.67rem;
+}
+.welcome-area form * {
+   display: block;
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+}
+.welcome-area form input {
+    width: 100%;
+}
+.welcome-area form input, .welcome-area form button{
+    border-radius: 20px;
+    padding: 1rem;
+    outline: 0;
+}
+.error-username {
+    border: 1px solid red;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding: 0 1rem;
+    background-color: #384145;
+    color: whitesmoke;
+}
+.logo {
+    border: 2px solid #9DA7AB;
+    border-radius: 50%;
+    padding: 0.6rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.logo,.highscore-title {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    width: 95%;
+    /* height: 85vh; */
+}
+aside {
+    flex-basis: 20%;
+    padding: 1rem;
+    background-color: #CBE9F7;
+    border-right: 3px dashed #384145;
+}
+aside p {
+    display: inline-block;
+    /* border: 1px solid green; */
+    margin: 0.5rem;
+}
+section {
+    flex-basis: 80%;
+    background-color: #9DA7AB;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+section h2 {
+    font-size: 2rem;
+}
+section img {
+    width: 200px;
+}
+section .play {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+section p {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+section .chances {
+    margin-top: -1rem;
+}
+section .input-area {
+    margin: -1rem 0 1rem;
+}
+section .input-area input {
+    padding: 0.7rem;
+    font-size: 1rem;
+}
+section .input-area button {
+    padding: 0.7rem 0.7rem;
+}
+.hide-content {
+    display: none;
+}
+.scramble-box {
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid #384145;
+    width: 50%;
+    padding: 0 0.5rem;
+    justify-content: center;
+    margin-top: 0.3rem;
+}
+.scramble-box p {
+    background-color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
+    margin: 0.2rem 0.3rem 0.2rem 0;
+    flex-basis: 15%;
+    text-transform: uppercase;
+}
+.hide-scramble-border {
+    border: 0;
+}
+
+@media(max-width:600px) {
+    .body-welcome {
+        height: auto;
+    }
+    nav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .logo,.highscore-title {
+        font-size: 2rem;
+        margin: 0.5rem 0;
+    }
+    .highscore-title {
+        font-size: 1.5rem;
+    }
+    main {
+        margin-top: 0.5rem;
+        flex-flow: column nowrap;
+    }
+    main aside {
+        order: 1;
+        border: none;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="./assets/icon/favicon.ico"/>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Spell It</title>
+</head>
+<body class="body-welcome">
+      <div class="welcome-area">
+        <article>
+            <h3>WELCOME</h3>
+            <p>Hi and Welcome to Spell-It. This app is designed to sharpen your English skills by asking you to correctly type in the word you hear from the robot. You can also find all the words you spelt in a section on the page for every round.</p>
+            <form action="#">
+                <label for="username">Enter your username</label>
+                <input type="text" name="username" id="username" placeholder="max of six letters" maxlength="6">
+                <button type="submit">Enter</button>
+            </form>
+        </article>
+    </div>
+    <!-- navbar to contain the highscore section and the name of the app -->
+    <nav class="hide-content" id="navbar">
+        <div class="app-name">
+            <p class="logo">Spell It</p>
+        </div>
+        <div class="highscore-area">
+            <p class="highscore-title">Highscore: <span id="score" class="score"></span>(<span id="user-highscore" class="username"></span>)</p>
+        </div>
+    </nav>
+    <!-- the body main content -->
+    <main class="hide-content" id="main">
+        <aside id="aside-words">
+        </aside>
+        <section>
+            <h2 class="welcome">Welcome <span id="user" class="user">Jake</span></h2>
+            <img src="./assets/img/sound.png" alt="a speaker gif" class="speaker" id="speaker">
+            <button class="play" id="listen-btn">Start</button>
+            <div class="scramble-box hide-scramble-border" id="scramble">
+            </div>
+            <p class="current-score">Score: <span class="score-no" id="score-board"></span></p>
+            <p id="chances-left" class="chances">Chances Left: <span id="chances-no" class="chances-no"></span></p>
+            <div class="input-area">
+                <input type="text" name="answer" id="answer" placeholder="answer">
+                <button class="enter-answer" id="answer-btn"></button>
+            </div>
+        </section>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>
