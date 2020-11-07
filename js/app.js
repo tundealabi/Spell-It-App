@@ -78,15 +78,15 @@ class Words{
     constructor () {
         this.wordStore = "";
         this.loadWordLibrary();
-        this.wordBank = null;
+        this.wordBank = [];
     }
     loadWordLibrary() {
-        fetch("js/words.json")
+        fetch("./js/words.json")
         .then(resp=>resp.json())
         .then(data=>this.analyseData(data));
     }
     analyseData(data) {
-        this.wordBank = data;
+        this.wordBank = [...data];
     }
     randomGenWord() {
       let rand = Math.floor(Math.random()*this.wordBank.length);
