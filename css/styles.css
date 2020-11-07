@@ -18,7 +18,7 @@ body{
 .welcome-area {
     padding: 1rem;
     background-color: wheat;
-    width: 97%;
+    width: 67%;
 }
 .welcome-area p,.welcome-area h3 {
     font-size: 1.5rem;
@@ -63,7 +63,7 @@ main {
     display: flex;
     flex-flow: row nowrap;
     margin: 0 auto;
-    width: 95%;
+    width: 65%;
     /* height: 85vh; */
 }
 aside {
@@ -136,9 +136,12 @@ section .input-area button {
     border: 0;
 }
 
-@media(max-width:600px) {
+@media(max-width:700px) {
     .body-welcome {
         height: auto;
+    }
+    .welcome-area {
+        width: 97%;
     }
     nav {
         flex-flow: column nowrap;
@@ -154,9 +157,13 @@ section .input-area button {
     main {
         margin-top: 0.5rem;
         flex-flow: column nowrap;
+        width: 97%;
     }
     main aside {
         order: 1;
         border: none;
+    }
+    main .input-area{
+        text-align: center;
     }
 }
